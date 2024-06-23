@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: verdana;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3.2vm;
+    text-align: center;
+}
+
+.container {
+    width: 900px;
+    min-width: 600px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.containerForm {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container form {
+    width: 60%;
+}
+
+.musiccard {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.songinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.album-card {
+    font-size: 1.25vmin;
+}
+
+.canv {
+    border: 1px solid black;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+    height: 25vmin;
+    width: 25vmin;
+    align-self: center;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#songinfo2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    height: 62px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-file {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.text-file {
+    display: flex;
+    justify-content:space-between;
+    margin: 5px 0 0 0;
+}
+
+button[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+input[type=text] {
+    font-size: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: thin solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input[type=number] {
+    font-size: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: thin solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+input[type=file] {
+    width: 70%;
+    color: #444;
+    padding: 5px;
+    padding-left: 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    margin-left: 5px;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    background: #084cdf;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.alert {
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Upload Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload song</h1>
+        <div class="containerForm">
+            <form action="" id="uploadform">
+                <div class="input-file">
+                    <label for="artist-name">Artist name:</label>
+                    <!-- <input type="text" id="artist-name" placeholder="Artist name" required /> -->
+                    <div class="text-file">
+                        <input type="text" id="artist-name" placeholder="Artist name" required />
+                        <input type="file" accept="image/*" id="artist-profile">
+                    </div>
+                </div>
+                <div class="input-file">
+                    <label for="album-name">Album:</label>
+                    <div class="text-file">
+                        <input type="text" id="album-name" placeholder="Album name" required />
+                        <input type="number" id="year-release" placeholder="Year of release" required />
+                        <input type="file" accept="image/*" id="album-cover">
+                    </div>
+                </div>
+                <div class="input-file">
+                    <label for="song-name">Song:</label>
+                    <div id="song-data">
+                        <div class="text-file">
+                            <input type="number" id="track-num-0" placeholder="Track No" value='1' required />
+                            <input type="text" id="song-name-0" placeholder="Song name" required />
+                            <input type="file" accept="audio/*" id="song-file-0" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" id="moresong">+</button>
+                    <button type="button" id="load">Upload</button>
+                </div>
+            </form>
+            <div class="musiccard" id="musiccard">
+                <img id="output" class="canv" />
+                <div class="songinfo">
+                    <div class="album-card">
+                        <h1 id="songinfo1">Album</h1>
+                    </div>
+                    <div>by <span id="songinfo2">By artist</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="upload.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+</body>
+
+</html>
